@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.homepage {
+  height: 100%;
+  width: 100%;
+}
+.currency-app-container {
+  height: 100%;
+  width: 100%;
+}
+
+.selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 2rem 5rem;
+}
+.selection-container label {
+  padding: 1rem 0rem;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+}
+
+.non-countries {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+}
+
+.currency-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0rem;
+  margin: 1rem 0;
+  box-shadow: 1px 1px 5px rgb(166, 166, 166);
+  border-radius: 0.5rem;
+}
+
+.flag-container{
+  padding: 0rem 2rem;
+}
+
+.flag-container img{
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    width: 8rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.currency-data-entry{
+  padding: 0rem 1rem;
+}
+
+.loader-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .currency-info{
+    flex-direction: column;
+  }
+  .currency-data-entry{
+    padding: 0.5rem 0rem;
+  }
+}
